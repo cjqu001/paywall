@@ -1,0 +1,8 @@
+services:
+  paywall:
+    container_name: paywall
+    hostname: paywall
+    image: ghcr.io/cjqu001/paywall:latest
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
